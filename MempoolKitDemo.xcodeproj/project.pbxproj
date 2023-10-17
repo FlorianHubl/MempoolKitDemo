@@ -11,6 +11,7 @@
 		178DC1692ADF29880046A640 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178DC1682ADF29880046A640 /* ContentView.swift */; };
 		178DC16B2ADF29890046A640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DC16A2ADF29890046A640 /* Assets.xcassets */; };
 		178DC16F2ADF29890046A640 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 178DC16E2ADF29890046A640 /* Preview Assets.xcassets */; };
+		178DC1772ADF29A30046A640 /* MempoolKit in Frameworks */ = {isa = PBXBuildFile; productRef = 178DC1762ADF29A30046A640 /* MempoolKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				178DC1772ADF29A30046A640 /* MempoolKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = MempoolKitDemo;
+			packageProductDependencies = (
+				178DC1762ADF29A30046A640 /* MempoolKit */,
+			);
 			productName = MempoolKitDemo;
 			productReference = 178DC1632ADF29880046A640 /* MempoolKitDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 178DC15A2ADF29880046A640;
+			packageReferences = (
+				178DC1752ADF29A30046A640 /* XCRemoteSwiftPackageReference "MempoolKit" */,
+			);
 			productRefGroup = 178DC1642ADF29880046A640 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		178DC1752ADF29A30046A640 /* XCRemoteSwiftPackageReference "MempoolKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FlorianHubl/MempoolKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		178DC1762ADF29A30046A640 /* MempoolKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 178DC1752ADF29A30046A640 /* XCRemoteSwiftPackageReference "MempoolKit" */;
+			productName = MempoolKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 178DC15B2ADF29880046A640 /* Project object */;
 }
